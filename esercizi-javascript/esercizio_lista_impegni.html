@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Creare una lista degli impegni</title>
+	
+	<style>
+	
+	body{
+
+		font-family: Verdana, sans-serif;
+		font-size: 18px;
+		line-height: 50px;
+
+	}
+
+	.fatto{
+
+		text-decoration: line-through;
+		opacity: 0.4;
+	}	
+
+.selezione{
+	color: #00F;
+}
+
+	</style>
+
+	
+</head>
+
+<body>
+
+<h3>LISTA DEGLI IMPEGNI GIORNALIERI</h3>
+
+<ul>
+	<li>Lavare la macchina</li>
+	<li>Andare dal dentista</li>
+	<li>Palestra</li>
+	<li>Spesa</li>
+
+
+</ul>
+
+
+<script>
+
+var lista = document.querySelectorAll("li");
+
+
+for (var i = 0; i < lista.length; i++){
+
+lista[i].addEventListener("mouseover", function() {
+this.classList.add("selezione");
+
+});
+
+lista[i].addEventListener("mouseout", function() {
+this.classList.remove("selezione");
+
+});
+
+lista[i].addEventListener("click", function() {
+this.classList.toggle("fatto");
+
+});
+
+
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

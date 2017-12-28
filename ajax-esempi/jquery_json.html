@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basi Ajax con jQuery</title>
+
+    <style>
+
+#demo{width: 150px; height: 150px; background-color: #ccc; margin: 20px auto;}
+
+
+    </style>
+  </head>
+
+
+  <body>
+
+<div id="demo"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+// $.ajax({
+// type: 'GET',
+// url: 'https://francescamasin.github.io/HTML5-CSS3/studenti.json',
+// dataType: 'json',
+//cache: false,
+// success: function(dati){
+
+//  $.each(dati, function(index, element){
+
+// $('#demo').append($('<div>' , { text: element.nome + " " + element.cognome}));
+//  }); 
+// }
+// });
+
+$.getJSON('https://francescamasin.github.io/HTML5-CSS3/studenti.json', {cache: false} , function(dati){
+
+$.each(dati, function(index , element){
+
+$('#demo').append($('<div>' , {text: element.nome + " " + element.cognome}));
+
+});
+
+});
+
+
+});
+
+</script>
+
+
+  </body>
+</html>

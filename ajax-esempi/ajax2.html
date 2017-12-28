@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Richiamare dati con Ajax da un file HTML</title>
+
+  <style>
+  
+  #contenuto{width: 200px; height: 200px;}
+  
+  </style>
+
+</head>
+<body>
+  <button id="ricevi">Ricevi il contenuto del div</button>
+  <br><br>
+  <div id="contenuto"></div>
+
+  <script>
+  document.getElementById('ricevi').addEventListener('click' , caricaContenuto);
+
+  function caricaContenuto(){
+
+    var ajax = new XMLHttpRequest();
+
+    ajax.open ('GET' , 'https://francescamasin.github.io/HTML5-CSS3/esempio1.html' , true);
+
+    ajax.onload = function(){
+
+    if(this.status == 200){
+
+    document.getElementById('contenuto').innerHTML = this.responseText;
+      }else if(this.status == 404){
+      document.getElementById('contenuto').innerHTML = "Risorsa non trovata!";
+    }
+
+    }
+
+    ajax.send();
+
+  }
+  
+  
+  </script>
+</body>
+</html>

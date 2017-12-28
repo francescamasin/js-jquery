@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Basi Ajax con jQuery</title>
+
+    <style>
+
+#demo{width: 150px; height: 150px; background-color: #6f84ff; margin: 20px auto;}
+
+button{width: 100px; height: 50px; font-size: 16px; color: #e89b0c; border: 1px solid #ddd; background-color: #6f84ff; border-radius: 8px; margin: 0 auto;  display: block;}
+
+    </style>
+  </head>
+
+
+  <body>
+
+<div id="demo"></div>
+
+<button>Mostra Immagine</button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("button").click(function(){
+
+$.ajax({
+url: "https://francescamasin.github.io/HTML5-CSS3/immagine.html"})
+
+.done(function(dati){
+
+  $('#demo').html(dati);
+});
+
+
+
+
+
+});
+});
+
+
+</script>
+
+
+  </body>
+</html>

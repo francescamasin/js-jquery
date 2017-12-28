@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http - equiv="X-UA-Compatible" content="IE=edge">
+        <title> Esercizi di selezione</title>
+    </head>
+   
+
+    <body>
+
+<h1>Ciao, Mondo!</h1>
+<h1>Sto imparando JavaScript</h1>
+
+<ul>
+    <li id="evidenza">JS è potente</li>
+    <li class="colorato">JS è flessibile</li>
+    <li class="colorato">JS è intuitivo</li>
+
+</ul>
+
+<h3>Quante immagini in questa pagina?</h3>
+
+<p id="demo"></p>
+
+<img src="http://lorempixel.com/80/80" alt="">
+<img src="http://lorempixel.com/80/80" alt="">
+<img src="http://lorempixel.com/80/80" alt="">
+<img src="http://lorempixel.com/80/80" alt="">
+<img src="http://lorempixel.com/80/80" alt="">
+
+<p id="immagini_pagina">Numero  di immagini</p>
+        
+<button type="button" onclick="controlla()">Clicca</button>
+
+<script>
+    
+// document.getElementById("evidenza").innerHTML = "E' veramente facile cambiare un testo con JS";
+
+// document.querySelector(".colorato").style.backgroundColor = "#ff0000";
+
+// document.querySelector(".colorato").style.fontSize = "50px";
+
+
+
+// var sel = document.getElementsByClassName("colorato");
+
+// sel[1].innerHTML = "Selezionare un elemento specifico in una lista di classe";
+
+
+// document.getElementsByClassName("colorato")[1].innerHTML = "Selezionare un elemento specifico in una lista di classe";
+
+
+// document.getElementsByTagName("h1")[0].innerHTML = "Selezionare un elemento specifico in una lista di tag";
+
+
+
+// var numImg = document.images.length;
+
+// document.getElementById("demo").innerHTML = "Questa pagina ha: " + numImg + " immagini"; 
+
+
+function controlla(){
+
+var numImg = document.images.length;
+
+document.getElementById("immagini_pagina").innerHTML = "Questa pagina ha: " + numImg + " immagini"; 
+
+
+}
+
+
+
+</script>
+
+    </body>
+</html>

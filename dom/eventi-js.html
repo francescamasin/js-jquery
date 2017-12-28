@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Eventi in  JS</title>
+	
+<style>
+	#esempio{
+		padding:0;
+	}
+</style>
+	
+</head>
+
+<body>
+
+<button onclick="alert('Posso aiutarti')">Clicca</button>
+
+
+<button id="btn-2">Clicca qui</button> 
+
+<hr>
+
+<button id="btn-3">Ehi, vedi cosa succede</button>
+
+<p id="esempio"></p>
+
+
+
+ 
+
+
+<script>
+	
+// document.getElementById("btn-2").onclick=function(){
+
+// 	alert("Hai cliccato questo bottone");
+// }
+
+// document.getElementById("btn-2").onclick=function(){
+
+// 	document.write("Hai cliccato questo bottone");
+// }
+
+// document.getElementById("btn-2").onclick=function(){
+
+// 	confirm("Hai cliccato questo bottone?");
+// }
+
+// document.getElementById("btn-3").addEventListener("click" , function(){
+
+// 	alert("Ciao, mondo");
+// })
+		
+
+
+var evento = document.getElementById("btn-3");
+/*-----------------------evento-----,funzione------*/
+evento.addEventListener("mouseover" , over);
+evento.addEventListener("click" , clicca);
+evento.addEventListener("mouseout" , out);
+
+function over(){
+
+	document.getElementById("esempio").innerHTML += "Il tuo mouse è sul bottone!<br>";
+
+}
+
+
+function clicca(){
+
+	document.getElementById("esempio").innerHTML += "Hai cliccato questo bottone!<br>";
+
+}
+
+function out(){
+
+	document.getElementById("esempio").innerHTML += "Il tuo mouse non è  più sul bottone!<br>";
+
+}
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

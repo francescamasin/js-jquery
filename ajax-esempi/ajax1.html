@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Richiamare dati con Ajax da un file di testo</title>
+
+</head>
+<body>
+
+  <button id="ricevi">Ricevi il contenuto del file</button>
+  <br><br>
+  <div id="contenuto"></div>
+
+
+  <script>
+  document.getElementById('ricevi').addEventListener('click' , caricaContenuto);
+
+  function caricaContenuto(){
+
+    /*--------- Variabile per nuova richiesta ---------*/
+    var ajax = new XMLHttpRequest();
+
+    /*------ funzione OPEN: metodo get per andare a prendere la risorsa, dove andare a prendere la risorsa, 
+    parametro per scegliere se la chiamata deve essere asincrona -true- altrimenti false ------*/
+    ajax.open ('GET' , 'https://francescamasin.github.io/HTML5-CSS3/esempio.txt' , true);
+
+    /*------ funzione ONLOAD: Una volta caricata la risorsa controllare lo stato -------*/
+    ajax.onload = function(){
+      if(this.status == 200){
+        document.getElementById('contenuto').innerHTML = this.responseText;
+      }else if(this.status == 404){
+        document.getElementById('contenuto').innerHTML = "Risorsa non trovata!";
+      }
+    }
+    /*------ funzione SEND: per inviare il tutto --------*/
+    ajax.send();
+
+  }
+  
+    // Valori per readyState
+    // 0: richiesta non inizializzata
+    // 1: stabilita connessione con il server
+    // 2: richiesta ricevuta 
+    // 3: processo in corso
+    // 4: completata la richiesta.Pronti per la risposta
+
+    // Stati per HTTP 
+    // 200: "Successo"
+    // 403: "Accesso negato" non si hanno i privilegi
+    // 404: "Risorsa non trovata"
+  
+  </script>
+</body>
+</html>

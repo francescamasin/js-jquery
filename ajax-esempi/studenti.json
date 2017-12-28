@@ -1,0 +1,32 @@
+[
+    {
+    "id": 1,
+    "nome": "Mario",
+    "cognome": "Rossi"
+    },
+    {
+    "id": 2,
+    "nome": "Carla",
+    "cognome": "Verdi"
+    },
+    {
+    "id": 3,
+    "nome": "Stefano",
+    "cognome": "Neri"
+    },
+    {
+    "id": 4,
+    "nome": "Marco",
+    "cognome": "Bianchi"
+    },
+    {
+    "id": 4,
+    "nome": "Paola",
+    "cognome": "Bianchi"
+    },
+    {
+    "id": 4,
+    "nome": "Paola",
+    "cognome": "Bianchi"
+    }
+]

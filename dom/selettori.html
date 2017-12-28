@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http - equiv="X-UA-Compatible" content="IE=edge">
+        <title> Selettori in JavaScript
+        </title>
+    </head>
+   
+
+    <body>
+
+<h1>Ciao, Mondo!</h1>
+<h1>Sto imparando JavaScript</h1>
+
+<ul>
+    <li id="evidenza">JS è potente</li>
+    <li class="colorato">JS è flessibile</li>
+    <li class="colorato">JS è intuitivo</li>
+
+</ul>
+<script>
+    document.getElementById("evidenza");
+    document.getElementsByClassName("colorato");
+    document.getElementsByTagName("h1");
+    /*Prende tutto il primo elemento con la classe colorato, si può anche andare a cercare attraverso l'ID oppure il tag*/
+    document.querySelector(".colorato");
+     /*Prende tutti gli elementi con la classe colorato, si può anche andare a cercare attraverso l'ID oppure il tag*/
+    document.querySelectorAll(".colorato");
+    document.querySelectorAll("li");
+</script>
+
+    </body>
+</html>

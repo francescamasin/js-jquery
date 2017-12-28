@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Richiamare dati con Ajax da un file JSON</title>
+</head>
+<body>
+  <button id="getStudente">Studente Singolo</button>
+ 
+  <button id="getStudenti">Lista Studenti</button>
+  <br><br>
+  <h1>Richiamo un singolo studente</h1>
+  <div id="studente"></div>
+  
+  <h1>Richiamo la lista degli studenti</h1>
+  <div id="studenti"></div>
+
+  <script>
+    document.getElementById('getStudente').addEventListener('click' , mostraStudente);
+    document.getElementById('getStudenti').addEventListener('click' , mostraLista);
+
+    function mostraStudente(){
+      var ajax = new XMLHttpRequest();
+
+      ajax.open('GET', 'https://francescamasin.github.io/HTML5-CSS3/studente.json', true);
+
+      ajax.onload = function(){
+        if(this.status == 200){
+          var studente = JSON.parse(this.responseText);
+          var mostra = "";
+          mostra += '<ul>'+
+          '<li>ID: '+ studente.id +'</li>'+
+          '<li>Nome: '+ studente.nome +'</li>'+
+          '<li>Cognome: '+ studente.cognome +'</li>'+
+          '</ul>';
+
+          document.getElementById('studente').innerHTML = mostra;
+        }else if(this.status == 404){
+            document.getElementById('studente').innerHTML = "Risorsa non trovata!";
+        }
+      }
+    ajax.send();
+    }
+
+    function mostraLista(){
+      var ajax = new XMLHttpRequest();
+
+      ajax.open('GET', 'https://francescamasin.github.io/HTML5-CSS3/studenti.json', true);
+
+      ajax.onload = function(){
+        if(this.status == 200){
+          var listaStudenti = JSON.parse(this.responseText);
+          var mostra = "";
+          for(var i in listaStudenti){
+            mostra += '<ul>'+
+            '<li>ID: '+ listaStudenti[i].id +'</li>'+
+            '<li>Nome: '+ listaStudenti[i].nome +'</li>'+
+            '<li>Cognome: '+ listaStudenti[i].cognome +'</li>'+
+            '</ul>';
+          }   
+          document.getElementById('studenti').innerHTML = mostra;
+        }else if(this.status == 404){
+            document.getElementById('studenti').innerHTML = "Risorsa non trovata!";
+        }
+      }
+      ajax.send();
+    }
+    </script>
+  
+
+
+</body>
+</html>

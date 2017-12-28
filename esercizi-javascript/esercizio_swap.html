@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="utf-8">
+    <title>
+      Esercizio con swap
+    </title>
+    <style>
+      .bluebox{
+        background-color: #191970;
+		color: white;
+		height: 100px;
+		width:40%;
+	  }
+	  .orangebox{
+		background-color: rgb(255,140,0);
+		height: 100px;
+		width: 40%;
+	  }
+	  .lavandabox{
+		background-color: #6A5ACD;
+		height: 100px;
+		width: 40%;
+	  }
+	  
+	  img{
+		  
+		  width: 80px;
+		  height: 80px;
+		  padding-top: 10px;
+	  }
+	  
+	</style>
+  </head>
+  
+  <body>
+    <div class="bluebox" id="cani">
+      <p>
+        I cani
+        <img src="immagini/cane.jpg">
+       
+      </p>
+      
+    </div>
+    
+    <div class="orangebox" id="gatti">
+      <p>
+        I gatti
+        <img src="immagini/gatto.jpg">
+      </p>
+      
+    </div>
+    
+    <div class="lavandabox" id="conigli">
+      <p>
+        I conigli
+        <img src="immagini/coniglio.jpg">
+      </p>
+      
+    </div>
+
+<button id="bottone1" onclick="swap('cani' , 'gatti')">Scambia primo e secondo</button>
+
+<button id="bottone2" onclick="swap('gatti' , 'conigli')">Scambia secondo e terzo</button>
+   
+    
+    <script>
+     
+      function swap(id1,id2){
+
+        var a = document.getElementById(id1).innerHTML;
+        var b = document.getElementById(id2).innerHTML;
+
+        document.getElementById(id2).innerHTML = a;
+        document.getElementById(id1).innerHTML = b;
+
+
+
+      }
+      
+      
+    </script>
+  </body>
+  
+</html>
