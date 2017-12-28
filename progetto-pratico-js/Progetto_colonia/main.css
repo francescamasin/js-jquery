@@ -1,0 +1,24 @@
+html {
+  font-family: lato,  sans-serif;
+}
+
+body {
+  max-width: 100%;
+  margin: 20px auto;
+
+}
+
+div article{
+  width: 30%;
+  float: left;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  background-color: #ccc;
+}
+
+
+@media screen and (max-width: 768px){
+
+div article{width: 100%;}
+
+}

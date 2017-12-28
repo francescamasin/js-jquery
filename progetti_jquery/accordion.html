@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Progetti pratici Accordion con jQuery</title>
+
+<style>
+
+#pannelli{
+width: 450px;
+margin: 10px auto;
+border-bottom: 2px solid #2f0866;
+
+}
+
+#pannelli h3{
+color: #fff;
+background-color: #7a5def;
+font-family: Verdana, sans-serif;
+border: 2px solid #2f0866;
+border-bottom: none;
+margin: 0;
+padding: 5px;
+cursor: pointer;
+}
+
+#pannelli h3:hover{
+background-color: #180656;
+}
+
+
+#pannelli p{
+
+background-color: #ccc;
+font-family: Verdana, sans-serif;
+border: 2px solid #2f0866;
+border-bottom: none;
+border-top: none;
+margin: 0;
+padding: 10px;
+text-align: justify;
+}
+
+
+
+</style>
+
+<script src="jquery-3.1.1.min.js"></script>
+
+
+
+<script>
+$(document).ready(function(){
+
+$("#pannelli p:not(:first)").hide();
+
+$("#pannelli h3").click(function(){
+
+$(this).next().slideToggle(2000).siblings("p:visible").slideUp(2000);
+
+});
+
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+	<div id="pannelli">
+<h3>Primo pannello</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3>Secondo pannello</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<h3>Terzo pannello</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3>Quarto pannello</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<h3>Quinto pannello</h3>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	</div>
+</body>
+
+
+</html>

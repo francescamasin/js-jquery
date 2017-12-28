@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>La mia colonia felina</title>
+
+
+    <link rel="stylesheet" href="main.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+
+  </head>
+
+  <body>
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <h1 class="bg-primary">Colonie feline</h1></div></div>
+  <button type="button"  class="btn btn-info" data-target="#toggle" data-shown-text="Chiudi" data-hidden-text="Roma">Roma</button>
+</div>
+
+
+<section id="toggle" style="display: none;">
+  <div class="container">
+      <header>
+      </header>
+      <div class="row">
+<div id="contenuto">
+
+
+</div></div>
+</div>
+</section>
+
+
+
+    <script>
+
+// bottone toggle
+    var button = document.querySelector('button');
+    button.addEventListener('click', function(event) {
+        var target = document.querySelector(button.getAttribute('data-target'));
+        if (target.style.display == "none") {
+            target.style.display = "block";
+            button.innerHTML = button.getAttribute('data-shown-text');
+        } else {
+            target.style.display = "none";
+            button.innerHTML = button.getAttribute('data-hidden-text');
+        }
+    });
+
+// gestione dati del file JSON
+    var header = document.querySelector('header');
+    var content = document.getElementById('contenuto');
+
+// inizio chiamata ajax
+    var mostraDati = new XMLHttpRequest();
+    mostraDati.onreadystatechange = function(){
+      if( this.readyState == 4 && this.status == 200){
+        var coloniaGatti = JSON.parse(mostraDati.responseText)
+
+
+      mostraNome(coloniaGatti);
+      mostraGatti(coloniaGatti);
+
+
+    function mostraNome(jsonData) {
+
+      var mioTitolo = document.createElement('h1');
+      mioTitolo.textContent = jsonData['coloniaFelina'];
+      header.appendChild(mioTitolo);
+
+      var testo = document.createElement('p');
+
+      testo.textContent = 'Città: ' + jsonData['luogo'] + jsonData['separa']
+      +  ' Popolazione felina: ' +  jsonData['numeroGatti'] + jsonData['separa'] + ' Responsabile:' + jsonData['gestore'];
+      header.appendChild(testo);
+    }
+
+    function mostraGatti(jsonData) {
+
+      var felini = jsonData['gatti'];
+
+      for(i = 0; i < felini.length; i++) {
+        var mioTesto = document.createElement('article');
+        var titoloPiccolo = document.createElement('h2');
+        titoloPiccolo.classList.add("bg-info");
+        var testo1 = document.createElement('p');
+        var testo2 = document.createElement('p');
+        var testo3 = document.createElement('p');
+        testo3.classList.add('bg-primary');
+        var elenco = document.createElement('ul');
+        elenco.classList.add("list-group");
+
+        titoloPiccolo.textContent = felini[i].nome;
+        testo1.textContent = 'Età: ' + felini[i].anni;
+        testo2.textContent = 'Razza: ' + felini[i].razza;
+        testo3.textContent = 'Segni del carattere:';
+
+        var speciale = felini[i].caratteristiche;
+        for(j = 0; j < speciale.length; j++) {
+          var elementoLista = document.createElement('li');
+          elementoLista.classList.add("list-group-item");
+          elementoLista.textContent = speciale[j];
+          elenco.appendChild(elementoLista);
+        }
+        mioTesto.appendChild(titoloPiccolo);
+         mioTesto.appendChild(testo1);
+         mioTesto.appendChild(testo2);
+         mioTesto.appendChild(testo3);
+         mioTesto.appendChild(elenco);
+        content.appendChild( mioTesto);
+      }
+
+    }
+}
+}
+
+mostraDati.open("GET", "https://francescamasin.github.io/HTML5-CSS3/colonia.json", true);
+mostraDati.send();
+
+    </script>
+  </body>
+</html>

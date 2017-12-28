@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Manipolazione del DOM - sostituire i contenuti</title>
+
+<style>
+
+.main{
+border: 1px solid #000;
+width: 20%;
+height:  100px;
+}
+	
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<!-- replaceAll, replaceWith-->
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+
+/*--------replaceWith: sostituisce quello che c'è all'interno dell'elemento #primo con il contenuto che vogliamo--------*/
+ $("#primo").replaceWith("<h4>Contenuto sostituito</h4>");
+
+/*--------replaceAll: sostituisce gli elementi selezionati con altri elementi--------*/
+$("<b>un altro contenuto</b>").replaceAll("#secondo");
+
+ });   
+});
+</script>
+
+</head>
+
+<body>
+	
+<p id="para1">Questo è un paragrafo</p>
+
+<div class="main">
+
+<div id="primo">Primo elemento</div>
+<div id="secondo">Secondo elemento</div>
+
+</div>
+<br>
+<button id="btn">Clicca</button>
+</body>
+
+
+</html>

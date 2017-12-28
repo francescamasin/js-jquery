@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Manipolazione del DOM - Rimuovere  elementi</title>
+
+<style>
+
+.main{
+border: 1px solid #000;
+width: 20%;
+height:  100px;
+}
+	
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<!-- remove, empty-->
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+/*-----------REMOVE: rimuove tutto l'elemento selezionato---------*/
+ //$("div").remove();
+
+
+// $("div").remove("#secondo");
+
+// $("#secondo").remove();
+
+/*-----------EMPTY: svuota l'elemento selezionato---------*/
+// $(".main").empty();
+
+$("body").empty();
+
+ });   
+});
+</script>
+
+</head>
+
+<body>
+	
+<p id="para1">Questo è un paragrafo</p>
+
+<div class="main">
+
+<div>Primo elemento</div>
+<div id="secondo">Secondo elemento</div>
+
+</div>
+<br>
+<button id="btn">Clicca</button>
+</body>
+
+
+</html>

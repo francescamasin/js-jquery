@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Funzione grep</title>
+    <!-- Ricerca con un filtro -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+
+            var fioriDefault = ["rosa", "papavero", "garofano", "ciclamino", "viola", "orchidea", "geranio"];
+            /* Crea un nuovo array: 
+                1. Indicare su quale array deve lavorare "fioriDefault"
+                2. Indicare gli elementi dell'array "item"
+                3. Stabilire la catalogazione da zero degli elem dell'array "index"
+            */
+            var fioriNuovo = $.grep(fioriDefault , function(item, index){
+/*Voglio i risultati la cui lettera iniziale è la G*/
+// return(item.charAt(0) == 'g');
+
+/*Voglio i risultati la cui lettera iniziale non è la G*/
+//return(item.charAt(0) == 'g');
+            //}, true);
+
+/*Voglio gli item che si trovano nella posizione tra 1 e 5 esclusi*/
+return(index > 1 && index < 5);
+            });
+
+$('#risultato').html('Risultati della tua ricerca:' + fioriNuovo);
+            
+            
+            
+        });
+    </script>
+</head>
+<body>
+   <div id="risultato"></div>
+</body>
+</html>

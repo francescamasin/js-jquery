@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Eventi-Form</title>
+
+<style>
+
+fieldset{
+width: 300px;
+
+}
+
+select{
+margin-top:  20px;
+margin-bottom: 20px;
+}
+
+div, span{
+color: #f00;
+font-size: 25px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- focus, blur, focusin, focusout, select, submit -->
+
+<script>
+
+$(document).ready(function(){
+
+
+/*$(":text").focus(function(){
+
+$(this).css("background-color" , "#ccc");
+
+});
+
+$(":text").blur(function(){
+
+$(this).css("background-color" , "#fff");
+
+});*/
+
+
+/*
+$("fieldset").focusin(function(){
+
+$(this).css("background-color" , "#ccc");
+
+});
+*/
+
+
+/*
+$("fieldset").focusout(function(){
+
+$(this).css("background-color" , "#ccc");
+
+});
+*/
+
+
+/*$("form").submit(function(){
+
+alert("Grazie per aver inviato il form");
+
+});*/
+
+
+$("input").select(function(){
+
+$(this).css("color" , "#f00");
+
+});
+
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+<form>
+
+<fieldset>
+
+<legend> Scheda Utente</legend> 
+
+
+Nome: <input type="text" name="nome"><br>
+Cognome: <input type="text" name="cognome"><br>
+<input type="submit" id="bottone" value="Invia">
+
+</fieldset>
+
+
+</form>
+</body>
+
+
+</html>

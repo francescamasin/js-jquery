@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Funzione map</title>
+    <!-- Va a mappare e ad agire sul singolo item a seconda della funzione che gli viene applicata -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+
+            var fioriDefault = ["rosa", "papavero", "garofano", "ciclamino", "viola", "orchidea", "geranio"];
+
+            //var numeri = [2,3,4,5,6];  
+        
+            //var nuovoArray = $.map(numeri, function(item, index){
+            var nuovoArray = $.map(fioriDefault, function(item, index){
+
+/* Return dell'array come un elenco ordinato partendo da 1*/             
+return((index+1) + ':' + item);
+
+//return(Math.pow(item,2));
+
+          });
+            
+//$('#risultato').html('Lista numeri: ' + numeri + '<br>' + 'Radice quadrata: ' + nuovoArray);    
+
+/*fioriDefault.join('<br>') Per fare andare a cacpo ogni elemento*/
+$('#risultato').html('Elenco: <br> ' + fioriDefault.join('<br>') + '<br>' + 'Elenco ordinato: <br> ' + nuovoArray.join('<br>'));      
+            
+        });
+    </script>
+</head>
+<body>
+   <div id="risultato"></div>
+</body>
+</html>

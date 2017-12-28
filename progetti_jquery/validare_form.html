@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Progetti pratici - Validare un form</title>
+
+
+
+<script src="jquery-3.1.1.min.js"></script>
+</head>
+<body> 
+			
+
+			<form>
+				Nome:<input type="text" class="field">	<br><br>
+				Email:<input type="email" class="field">  <br><br>
+				Indirizzo:<input type="text" class="field">  <br><br>
+				
+				<input type="button" value="Iscriviti" id="btn">
+			
+			</form>
+
+<div id="info" style="color: #f00"></div>
+			
+			<div id="feedback"></div>
+		
+</body>
+<script>                                                                                                               	
+		$(document).ready(function(){
+		
+$("#btn").click(function(){
+
+var field=true;
+
+$(".field").each(function(){
+
+if( $(this).val() == "" )
+{
+ field = false;
+
+}
+});
+
+if(field == false){
+
+$("#info").html("<h3>Riempi tutti i campi</h3");
+
+}
+else{
+
+$("#info").html("<h3>Grazie per esserti iscritto!</h3");
+
+$("#feedback").html("<h3>Controlla le tue informazioni: </h3");
+
+$(".field").each(function(){
+
+$("#feedback").append("<b>" + $(this).val() + "</b><br>");
+
+});
+
+$(".field").val("");
+
+
+
+}
+
+});
+		
+		});
+			
+</script>
+</html>
+
+
+
+
+
+

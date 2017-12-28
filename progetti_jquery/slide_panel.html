@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title> Progetti pratici - Pannello scorrevole con jQuery</title>
+
+<style>
+
+body{
+width: 450px;
+margin: 0px auto;
+
+
+}
+
+#pannello{
+background-color: #956a0d;
+height: 100px;
+margin: 0px;
+
+padding: 0;
+
+}
+
+p{
+text-align: center;
+margin: 0;
+padding-top: 5px;
+}
+
+input{
+margin-left:  25%;
+
+}
+
+#btn{
+margin: 0 auto;
+background-color: #550f0f;
+color: #fff;
+border-top: 3px solid #053b15;
+width: 130px;
+padding: 5px;
+border-bottom-left-radius: 8px;
+border-bottom-right-radius: 8px;
+cursor: pointer;
+
+}
+
+.slideNews{
+background-color: #480f0f;
+color: #fff;
+width: 125px;
+height: 30px;
+display: block;
+margin: 0px auto;
+}
+
+i.fa{
+margin-left: 8px;
+}
+
+
+
+</style>
+
+<script src="jquery-3.1.1.min.js"></script>
+<script src="https://use.fontawesome.com/f888bf5784.js"></script>
+
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+$("#pannello").slideToggle(2000, "swing");
+
+$(this).find($(".fa")).removeClass("fa-caret-up").addClass("fa-caret-down");
+
+
+});
+
+
+
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+	<div id="pannello">
+<p>iscriviti alla nostra newsletter<br>per rimanere aggiornato sulle nostre attività</p>
+<input type="text" placeholder="tua mail"><button>Invia</button>
+</div>
+<p id="btn">Newsletter<i class="fa fa-caret-up" aria-hidden="true"></i></p>
+	
+</body>
+
+
+</html>

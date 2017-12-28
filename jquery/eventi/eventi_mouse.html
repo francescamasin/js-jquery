@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Eventi-Mouse</title>
+
+<style>
+
+div{
+width: 100px;
+height: 100px;
+background-color: #f00;
+margin: 20px;
+
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- mouseenter, mouseleave, hover, mousedown, mouseup -->
+<script>
+
+$(document).ready(function(){
+
+/*
+$("div").mouseenter(function(){
+
+$(this).css("background-color" , "blue");
+
+});
+
+$("div").mouseleave(function(){
+
+$(this).css("background-color" , "green");
+
+});
+*/
+
+/*
+$("div").hover(function(){
+
+$(this).css("background-color" , "blue");
+
+} , function(){
+
+$(this).css("background-color" , "green");
+
+});
+*/
+
+$("div").mousedown(function(){
+
+$(this).css("background-color" , "green");
+
+});
+
+$("div").mouseup(function(){
+
+$(this).css("background-color" , "blue");
+
+});
+
+
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+<div id="box"></div> 
+
+</body>
+
+
+</html>

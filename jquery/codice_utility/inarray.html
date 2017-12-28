@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Funzione inArray</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+
+            var fiori = ["rosa", "papavero", "ciclamino", "viola", "orchidea"];
+            $('#risultato').html('L\'elemento viola al numero:' + $.inArray('viola' , fiori));
+            //Se l'elemento non c'è viene fuori -1
+            $('#risultato-due').html('L\'elemento garofano al numero:' + $.inArray('garofano' , fiori));
+            //La ricerca partirà dal numero 2
+            $('#risultato-tre').html('L\'elemento orchidea al numero:' + $.inArray('orchidea' , fiori, 2));
+            
+            
+        });
+    </script>
+</head>
+<body>
+   <div id="risultato"></div>
+   <div id="risultato-due"></div>
+   <div id="risultato-tre"></div>
+</body>
+</html>

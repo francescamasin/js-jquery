@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Manipolazione del DOM - Aggiungere contenuto ed elementi</title>
+<!-- jQuery set con append, after, prepend, before -->
+<style>
+
+.main{
+border: 1px solid #000;
+width: 20%;
+}
+	
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- append, after, prepend, before -->
+<script>
+$(document).ready(function(){
+
+$("#btn").click(function(){
+
+
+/*
+$("#para1").append(" Salve a tutti!");
+$(".main").append("<div>Terzo elemento</div>");
+*/
+
+/*
+$("#para1").after(" Salve a tutti!");
+$(".main").after("<div>Terzo elemento</div>");
+*/
+
+/*
+$("#para1").prepend(" Salve a tutti!");
+$(".main").prepend("<div>Terzo elemento</div>");
+*/
+
+/*
+$("#para1").before(" Salve a tutti!");
+$(".main").before("<div>Terzo elemento</div>");
+*/
+
+function appendText (){
+
+var text1 = "<p> testo con HTML</p>";
+
+var text2 = $("<p></p>").text("testo con jQuery");
+
+var text3 = document.createElement("p"); 
+text3.innerHTML = "testo con js";
+
+$("body").append(text1 , text2 , text3);
+
+
+}
+
+appendText ();
+
+ });   
+});
+
+
+</script>
+
+</head>
+
+<body>
+	
+<p id="para1">Questo è un paragrafo </p>
+
+
+<div class="main">
+
+<div>Primo elemento</div>
+<div>Secondo elemento</div>
+
+</div>
+
+<br>
+<button id="btn">Clicca</button>
+</body>
+
+
+</html>

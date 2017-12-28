@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Eventi-Keyboard</title>
+
+<style>
+
+#testo{
+font-size: 32px;
+
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- keydown, keyup -->
+
+<script>
+
+$(document).ready(function(){
+
+$("#testo").keydown(function(){
+
+$(this).css("color" , "blue");
+
+});
+
+$("#testo").keyup(function(){
+
+$(this).css("color" , "red");
+
+});
+
+});
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+<input type="text" id="testo">
+
+</body>
+
+
+</html>

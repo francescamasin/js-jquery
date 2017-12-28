@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Progetti pratici - Galleria di foto con plugin cycle</title>
+<link href="gallery_custom.css"  rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+<script src="https://use.fontawesome.com/f888bf5784.js"></script>
+
+<script  src="js/jquery-3.1.1.min.js"> </script>	
+<script  src="js/jquery_cycle.js"> </script>	
+
+	
+				
+				<script>  
+			$(document).ready(function() {
+				$('#immagini').cycle({
+					fx:     'fade', 
+					speed:  1000, 
+					timeout: 3000, 
+					pager:  '#thumbs ul',
+					next:   '#next', 
+					prev:   '#prev',
+					before:  onBefore, 
+					after:   onAfter,
+				
+					pagerAnchorBuilder: function(idx, slide) { 
+					return '<li><a href="#" title="Thumbnail"><img src="' + slide.src + '"/></a></li>'; 
+					}
+				
+				});
+				function onBefore() { 
+				$('#testo p').fadeOut('1000');
+				}
+				function onAfter() {
+				$('#testo p').fadeIn('1000');
+				$('#testo').html('<p>' + this.alt + '</p>');
+				}
+				
+				
+			});  
+		</script>
+	</head>
+	<body>
+		<div id="contenitore">
+
+			<div id="navImg">
+				<a id="prev" href=""><i class="fa fa-chevron-circle-left fa-3x" aria-hidden="true"></i></a>
+				<a id="next" href=""><i class="fa fa-chevron-circle-right fa-3x" aria-hidden="true"></i></a>
+			</div>			
+			<div id="testo">
+				
+			</div>
+			<div id="immagini"> 
+				<img src="img/slide1.jpg" alt="Caption foto 1"> 
+				<img src="img/slide2.jpg" alt="Caption foto 2"> 
+				<img src="img/slide3.jpg" alt="Caption foto 3"> 
+				<img src="img/slide4.jpg" alt="Caption foto 4"> 
+				<img src="img/slide5.jpg" alt="Caption foto 5"> 
+				<img src="img/slide6.jpg" alt="Caption foto 6"> 
+				<img src="img/slide7.jpg" alt="Caption foto 7"> 				
+			</div> 
+		
+			<div id="thumbs"><ul></ul></div>
+		</div>
+	</body>
+</html>

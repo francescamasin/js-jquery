@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Tutorial di jQuery- Risposte agli eventi</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<style>
+
+.btn-special{
+background-color: #b32222;
+width: 100px;
+height: 60px;
+border: 2px solid #ccc;
+border-radius: 5px;
+color: #fff;
+font-size: 16px;
+
+
+}
+
+</style>
+
+<script>
+
+$(document).ready(function(){
+
+// $("p").mouseover(function(){
+
+
+$("#para3").mouseover(function(){
+
+$(this).css("background-color" , "green");
+
+});
+
+
+$("#btn").click(function(){
+
+$(this).toggleClass("btn-special");
+
+});
+
+});
+
+
+</script>
+
+
+</head>
+
+<body>
+	
+<p id="para1">Questo è un paragrafo </p>
+<p id="para2">Questo è il secondo paragrafo </p>
+<p id="para3">Questo è il terzo  paragrafo </p>
+<p id="para4">Questo è il quarto paragrafo </p>
+
+
+
+<br>
+<button id="btn">Clicca</button>
+</body>
+
+
+</html>

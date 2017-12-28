@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Manipolazione del DOM - Set</title>
+<!-- jQuery set con html txt val attr -->
+<style>
+
+body,html{
+margin: 20px;
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!-- jQuery set con html,txt, val, attr-->
+
+<script>
+$(document).ready(function(){
+
+$("#html").click(function(){
+
+$("#para1").html("<b>jQuery Fans Club</b>");
+
+});
+
+$("#text").click(function(){
+
+// $("#para2").text("<em>jQuery Fans Club</em>");
+$("#para2").text("jQuery Fans Club");
+
+});
+
+$("#val").click(function(){
+
+$("#campo").val("Paola Bianchi");
+
+});
+   
+$("#link").click(function(){
+
+$("#jquery").attr("href" , "https://jquerymobile.com").text("Val al sito di jQuery Mobile");
+
+});
+
+ 
+});
+</script>
+
+</head>
+
+<body>
+	
+<p id="para1">Primo paragrafo</p>
+<p id="para2">Secondo paragrafo</p>
+
+ <p><input type="text" id="campo" value="Mario Rossi"></p>
+
+<p><a href="https://jquery.com/" id="jquery">Vai al sito di jQuery</a></p>
+
+<button id="text">Text</button>
+<button id="html">HTML</button>
+<button id="val">Value</button>
+<button id="link">Attr</button>
+</body>
+
+
+</html>

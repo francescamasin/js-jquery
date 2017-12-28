@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Animazioni in jQuery - hide,show, toggle</title>
+
+<style>
+
+div{
+background-color: orangered;
+width: 100px;
+height: 100px;
+margin: 20px;
+}
+
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+<script>
+
+$(document).ready(function(){
+
+$("#bottone").click(function(){
+
+
+/*$("div").hide(5000, function(){
+	alert("L'animazione è stata eseguita!");
+});*/
+
+
+
+// $("div").show(5000);
+
+/*Easing: con quale passo procede l'animazione cioè il rate, può assumere valori linear o swing*/
+ $("div").toggle(5000 , "swing");
+
+});
+});
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+<p>Primo paragrafo</p>
+<p> Secondo paragrafo</p>
+
+
+<div></div>
+<div hidden>box nascosto</div>
+
+<button id="bottone">Clicca</button>
+</body>
+
+
+</html>

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="it">
+<head>
+    <title>Funzione each</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+         $(document).ready(function(){
+
+//             var fioriDefault = ["rosa", "papavero", "garofano", "ciclamino", "viola", "orchidea", "geranio"];
+
+//         $.each(fioriDefault , function(index, value){
+
+// // alert(index + ':' + value);
+
+// $('#risultato').append(index+1 + ':' + value + '<br>');
+
+//         });
+
+//each su un oggetto
+
+var numeri = {a: 5, b: 100, c: 20, d: 50};
+var somma = 0;
+
+$.each(numeri, function(index, value){
+
+    somma += value;
+    $('#risultato').html(somma);
+
+
+});       
+        });
+    </script>
+</head>
+<body>
+   <div id="risultato"></div>
+</body>
+</html>

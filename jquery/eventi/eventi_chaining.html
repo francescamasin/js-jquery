@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Eventi- Chaining</title>
+
+<style>
+
+div{
+
+background-color: #551c1c;
+width: 150px;
+height: 150px;
+margin:20px;
+
+}
+	
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<script>
+
+$(document).ready(function(){
+
+$("#bottone").click(function(){
+
+$("#box").text("Simpatico!").slideUp(3000).slideDown(3000);
+
+
+});
+
+});
+
+</script>
+
+</head>
+
+<body>
+	
+<div id="box"></div>
+
+<button id="bottone">Clicca</button>
+</body>
+
+
+</html>

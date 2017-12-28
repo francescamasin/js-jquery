@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Selezione con jQuery-Selettore secondo la posizione</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("#primoBtn").click(function(){
+
+// $("p:first").css("background-color" , "orange");
+// $("tr:first").css("background-color" , "orange");
+
+//  $("tr:last").css("background-color" , "orange");
+
+// $("tr:last , li:first , p:last").css("background-color" , "orange");
+
+// $("tr:even").css("background-color" , "orange");
+
+//  $("li:even").css("background-color" , "orange");
+
+//  $("tr:odd").css("background-color" , "orange");
+
+// $("tr:eq(3)").css("background-color" , "orange");
+
+// $("tr:lt(3)").css("background-color" , "orange");
+
+
+// $("tr:gt(3)").css("background-color" , "orange");
+
+$("ul li:eq(3) , tr:eq(4)").css("background-color" , "orange");
+
+
+
+
+});
+});
+
+
+</script>
+
+</head>
+
+<body>
+	<ol class="argomento">
+<li id="arg-1">HTML</li>
+<li id="arg">CSS</li>
+<li id="arg-3">JavaScript</li>
+<li id="arg4">jQuery</li>
+<li id="arg 5">PHP</li>
+
+</ol>
+
+<ul id="corsi" class="prova Sel ">
+
+ <li>WordPress</li>
+<li class="cms">Joomla</li>
+<li>E-commerce</li>
+<li>Social Media Marketing</li>
+	</ul>
+
+<p id="primoPar" class="provaSel">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<table>
+	
+	<tr><th>N°</th><th>Specie</th><th>Nome</th></tr>
+<tr><td>1</td><td>Cane</td><td>Billy</td></tr>
+<tr><td>2</td><td>Gatto</td><td>Macchia</td></tr>
+<tr><td>3</td><td>Coniglio</td><td>Spot</td></tr>
+<tr><td>4</td><td>Criceto</td><td>Chicca</td></tr>
+<tr><td>5</td><td>Cavia</td><td>Lilla</td></tr>
+</table>
+
+
+
+<p id="secondoPar" class="testo">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button id="primoBtn" class="clicca">Clicca qui!</button>
+
+</body>
+
+
+</html>

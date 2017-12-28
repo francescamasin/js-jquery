@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Selezione con jQuery-Selettore Universale, Multiplo, Tag, ID, Classe</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+
+$(document).ready(function(){
+
+$("#primoBtn").click(function(){
+
+
+// $(" * ").css("background-color" , "blue");
+
+// $(" #arg2").css("background-color" , "blue");
+
+
+//  $(" ol").css("background-color" , "blue");
+
+// $(".speciale").css("background-color" , "blue");
+
+$("ul , p").css("background-color" , "blue");
+
+
+});
+
+
+});
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+	<ol class="argomento">
+<li id="arg1">HTML</li>
+<li id="arg2">CSS</li>
+<li id="arg3">JavaScript</li>
+<li id="arg4">jQuery</li>
+<li id="arg5">PHP</li>
+
+</ol>
+
+<ul id="corsi">
+
+ <li>WordPress</li>
+<li>Joomla</li>
+<li>E-commerce</li>
+<li>Social Media Marketing</li>
+	</ul>
+
+<p id"primoPar">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<p id="secondoPar" class="speciale">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<button id="primoBtn">Primo bottone</button>
+<button id="secondoBtn">Secondo bottone</button>
+</body>
+
+
+</html>

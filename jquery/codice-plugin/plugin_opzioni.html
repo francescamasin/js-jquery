@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src='jquery.dettagli_html.js'></script>
+     <script src='jquery.mio_stile.js'></script> 
+    
+    
+    <script>
+    $(document).ready(function(){
+    
+ $('body *').click(function(){
+
+//   // alert('ID di questo elemento è: ' + $(this).dettagli());
+//    $(this).dettagli();
+  // $(this).elemento().stileColore({background: "#ddd"});
+
+ });
+
+$('#bottone').click(function(){
+  //Prende quelli di default
+ $('h1, h3').stileColore();
+ //Prende il colore green e il bkg d default
+ $('p').stileColore({color: 'green'});
+ //Prende il colore blue e il bkg grigio
+$(this).stileColore({background: '#ccc' , color: 'blue'});
+
+
+
+    });
+    });
+
+    </script>
+
+
+    <title>Creare plugin jQuery - base</title>
+</head>
+<body>
+  <h1>Come creare un plugin jQuery</h1>
+  <h3>Funzioni di base</h3>
+  <p id='paragrafo'>Il primo plugin legge le caratteristiche degli elementi HTML</p>
+  <p>Il secondo plugin gestisce gli stili</p>
+  <button id='bottone'>Cambia stile</button>
+  
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	
+	<meta charset="utf-8">
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title>Manipolazione del DOM - Modificare lo stile</title>
+
+<style>
+
+.colore{
+color: #7a1c1c;
+}
+	
+.grande{
+font-size: 48px;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+<!-- css, addClass, removeClass, toggleClass-->
+
+
+<script>
+$(document).ready(function(){
+
+
+/*
+$("#change").click(function(){
+
+$("h1 , h3").css("color" , "green");
+
+$("h1 , h3").css({"background-color" : "#ccc" , "font-size" : "30px"});
+*/
+
+
+
+$("#add").click(function(){
+
+// $("h3 , p:first").addClass("colore");
+
+$("h3 , p:first").addClass("colore grande");
+
+});
+
+$("#remove").click(function(){
+
+$("h3").removeClass("grande");
+
+});
+
+
+
+$("#change").click(function(){
+
+$("p:last").toggleClass("colore grande");
+
+ });   
+ });   
+
+
+
+
+
+
+
+</script>
+
+</head>
+
+<body>
+	
+<h1>Questo è un titolo</h1>
+
+<p>Questo è un paragrafo</p>
+
+<h3>Questo è un altro titolo</h3>
+
+<p>Questo è un altro paragrafo</p>
+
+<button id="add">Aggiungi</button>
+<button id="remove">Rimuovi</button>
+<button id="change">Cambia</button>
+
+</body>
+
+
+</html>

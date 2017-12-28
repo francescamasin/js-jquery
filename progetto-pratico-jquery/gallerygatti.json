@@ -1,0 +1,38 @@
+[
+	{
+		"id": 0,
+		"foto": "gatto1.jpg",
+		"nome": "Peppe",
+		"razza": "meticcio europeo",
+		"descrizione": "gatto bellissimo",
+		"moreInfo": "tigrato"
+	},
+	{
+		"id": 1,
+		"foto": "gatto2.jpg",
+		"nome": "Luna",
+		"razza": "meticcia europea",
+		"descrizione": "gatta bellissima",
+		"moreInfo": "tricolore pelo lungo"
+	},
+	{
+		"id": 2,
+		"foto": "gatto3.jpg",
+		"nome": "Tigre",
+		"razza": "certosino",
+		"descrizione": "gatta bellissima",
+		"moreInfo": "grigio"
+	},
+
+	{
+		"id": 3,
+		"foto": "gatto3.jpg",
+		"nome": "Mirtilla",
+		"razza": "certosino",
+		"descrizione": "gatta bellissima",
+		"moreInfo": "grigio"
+	}
+
+
+
+]

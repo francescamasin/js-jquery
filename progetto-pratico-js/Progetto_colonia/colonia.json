@@ -1,0 +1,52 @@
+{
+  "coloniaFelina" : "Baffi e Code",
+  "luogo" : "Roma",
+  "numeroGatti" : 20,
+  "gestore" : "Pinco Pallo",
+  "separa"    : " * ",
+  "gatti" : [
+    {
+      "nome" : "Macchia",
+      "anni" : 4,
+      "razza" : "meticcio europeo",
+      "caratteristiche" : [
+        "veloce",
+        "pelo lungo",
+        "mangione"
+      ]
+    },
+    {
+      "nome" : "Mirtillo",
+      "anni" : 10,
+      "razza" : "soriano",
+      "caratteristiche" : [
+        "grasso",
+        "tricolore",
+        "dormiglione"
+      ]
+    },
+    {
+      "nome" : "Nerina",
+      "anni" : 8,
+      "razza" : "british",
+      "caratteristiche" : [
+        "smilza",
+        "nera",
+        "iperattiva"
+      ]
+    },
+
+    {
+      "nome" : "Tigre",
+      "anni" : 8,
+      "razza" : "british",
+      "caratteristiche" : [
+        "smilza",
+        "nera",
+        "iperattiva"
+      ]
+    }
+
+
+  ]
+}
