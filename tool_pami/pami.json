@@ -1,0 +1,1301 @@
+{
+	"_links": {
+		"self": {
+			"href": "https:\/\/www.mediadata.it\/api\/azienda?full=1\u0026page=1"
+		},
+		"first": {
+			"href": "https:\/\/www.mediadata.it\/api\/azienda?full=1"
+		},
+		"last": {
+			"href": "https:\/\/www.mediadata.it\/api\/azienda?full=1\u0026page=221"
+		},
+		"next": {
+			"href": "https:\/\/www.mediadata.it\/api\/azienda?full=1\u0026page=2"
+		}
+	},
+	"_embedded": {
+		"azienda": [{
+			"id": "1884",
+			"azienda": "10 CORSO COMO - GALLERIA CARLA SOZZANI",
+			"area_commerciale_id": "18",
+			"indirizzo": "Corso Como, 10",
+			"cap": "20154",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "02653531",
+			"fax": "02629004080",
+			"email": "press@galleriacarlasozzani.org",
+			"www": "www.galleriacarlasozzani.org",
+			"last_update": "2017-11-20",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "75867",
+					"azienda_id": "1884",
+					"cognome": "Arcari",
+					"nome": "Stefania",
+					"ruolo_desc": "",
+					"ruolo_id": "13",
+					"telefono": "",
+					"fax": "",
+					"email": "press@galleriacarlasozzani.org",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/75867"
+						}
+					}
+				}, {
+					"id": "7970",
+					"azienda_id": "1884",
+					"cognome": "Sozzani",
+					"nome": "Carla",
+					"ruolo_desc": "Founder",
+					"ruolo_id": "0",
+					"telefono": "",
+					"fax": "",
+					"email": "press@galleriacarlasozzani.org",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/7970"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/1884"
+				}
+			}
+		}, {
+			"id": "25093",
+			"azienda": "12 88 - SERVIZIO DI CONSULTAZIONE TELEFONICA SRL",
+			"area_commerciale_id": "31",
+			"indirizzo": "Via Moscova, 18",
+			"cap": "20121",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "0 800903277",
+			"fax": "",
+			"email": "customercare@il1288.it",
+			"www": "www.1288.it",
+			"last_update": "2013-04-21",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "50398",
+					"azienda_id": "25093",
+					"cognome": "Costanzi",
+					"nome": "Manola",
+					"ruolo_desc": "",
+					"ruolo_id": "7",
+					"telefono": "",
+					"fax": "",
+					"email": "mcostanzi@sopragroup.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/50398"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/25093"
+				}
+			}
+		}, {
+			"id": "9450",
+			"azienda": "12 THE BRIAN\u0026BARRY BUILDING - BBB SPA",
+			"area_commerciale_id": "6",
+			"indirizzo": "Via Italia 36\/38",
+			"cap": "20900",
+			"citta": "Monza",
+			"provincia": "MB",
+			"nazione_id": "1",
+			"telefono": "039321971 - 367792",
+			"fax": "0395964900",
+			"email": "info@boggi.it",
+			"www": "http:\/\/www.brianebarry.it",
+			"last_update": "2017-11-04",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "75847",
+					"azienda_id": "9450",
+					"cognome": "Gallo",
+					"nome": "Lucio",
+					"ruolo_desc": "Boggi Milano",
+					"ruolo_id": "14",
+					"telefono": "",
+					"fax": "",
+					"email": "lucio.gallo@boggi.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/75847"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/9450"
+				}
+			}
+		}, {
+			"id": "34105",
+			"azienda": "14 SEPTEMBRE MILANO SRL",
+			"area_commerciale_id": "3",
+			"indirizzo": "via Vittor Pisani 19",
+			"cap": "20124",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "3382980848",
+			"fax": "",
+			"email": "livia@14septembre.fr",
+			"www": "http:\/\/www.14septembre.fr\/it",
+			"last_update": "2017-06-23",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": []
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/34105"
+				}
+			}
+		}, {
+			"id": "8779",
+			"azienda": "30GIORNI",
+			"area_commerciale_id": "18",
+			"indirizzo": "Via Vincenzo Manzini, 45",
+			"cap": "00173",
+			"citta": "Roma",
+			"provincia": "RM",
+			"nazione_id": "1",
+			"telefono": "067264041",
+			"fax": "0672633395",
+			"email": "30giorni@30giorni.it",
+			"www": "http:\/\/www.30giorni.it",
+			"last_update": "2012-02-28",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "ITALIA",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "16634",
+					"azienda_id": "8779",
+					"cognome": "Ramazzotti",
+					"nome": "Davide",
+					"ruolo_desc": "Marketing e Pubblicita\u0027",
+					"ruolo_id": "7",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/16634"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/8779"
+				}
+			}
+		}, {
+			"id": "17240",
+			"azienda": "3D\u0027ESIGN COMMUNICATION SRL",
+			"area_commerciale_id": "3",
+			"indirizzo": "Via Cola Montano, 9",
+			"cap": "20159",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "028725221",
+			"fax": "0276281152",
+			"email": "info@3design.net, pressoffice@3design.net",
+			"www": "www.3design.net",
+			"last_update": "2018-01-10",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "34114",
+					"azienda_id": "17240",
+					"cognome": "Gusmeo",
+					"nome": "Massimiliano",
+					"ruolo_desc": "General Manager",
+					"ruolo_id": "28",
+					"telefono": "",
+					"fax": "",
+					"email": "m.gusmeo@3design.net",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/34114"
+						}
+					}
+				}, {
+					"id": "39978",
+					"azienda_id": "17240",
+					"cognome": "Contini",
+					"nome": "Simone",
+					"ruolo_desc": "PR \u0026 PO Manager",
+					"ruolo_id": "3",
+					"telefono": "",
+					"fax": "",
+					"email": "s.contini@chilipr.it",
+					"ordine": "100",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/39978"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/17240"
+				}
+			}
+		}, {
+			"id": "14",
+			"azienda": "3M ITALIA SRL",
+			"area_commerciale_id": "14",
+			"indirizzo": "Via N. Bobbio, 21",
+			"cap": "20096",
+			"citta": "Pioltello",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "0270351",
+			"fax": "0270058837",
+			"email": "innovation.it@mmm.com",
+			"www": "www.3mitalia.it",
+			"last_update": "2017-09-04",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "ITALIA",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "40816",
+					"azienda_id": "14",
+					"cognome": "Aleggiani",
+					"nome": "Daniela",
+					"ruolo_desc": "Corporate",
+					"ruolo_id": "5",
+					"telefono": "0270352430",
+					"fax": "",
+					"email": "daleggiani1@mmm.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/40816"
+						}
+					}
+				}, {
+					"id": "59086",
+					"azienda_id": "14",
+					"cognome": "Bruggia",
+					"nome": "Alessandro",
+					"ruolo_desc": "Communication, Sustainability \u0026 Key Account Leader",
+					"ruolo_id": "13",
+					"telefono": "",
+					"fax": "",
+					"email": "abruggia1@mmm.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/59086"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/14"
+				}
+			}
+		}, {
+			"id": "17985",
+			"azienda": "4IT GROUP - DIGITAL PRINTING FORUM, DMAROUND, MAILFORUM, BOOKFORUM",
+			"area_commerciale_id": "22",
+			"indirizzo": "C.D. Milano Oltre - Via Cassanese, 224",
+			"cap": "20090",
+			"citta": "Segrate",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "02-26927081",
+			"fax": "0226951006",
+			"email": "info@4itgroup.it",
+			"www": "www.4itgroup.it",
+			"last_update": "2017-10-12",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "36946",
+					"azienda_id": "17985",
+					"cognome": "Carnevali",
+					"nome": "Valentina",
+					"ruolo_desc": "e Marketing",
+					"ruolo_id": "5",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/36946"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/17985"
+				}
+			}
+		}, {
+			"id": "26916",
+			"azienda": "4W MARKETPLACE",
+			"area_commerciale_id": "3",
+			"indirizzo": "Via B. Quaranta, 40",
+			"cap": "20139",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "02525051",
+			"fax": "0293661938",
+			"email": "4winfo@4wmarketplace.com",
+			"www": "http:\/\/www.4wmarketplace.com\/",
+			"last_update": "2017-09-14",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "69029",
+					"azienda_id": "26916",
+					"cognome": "Novarini",
+					"nome": "Rossana",
+					"ruolo_desc": "",
+					"ruolo_id": "5",
+					"telefono": "",
+					"fax": "",
+					"email": "rossana.novarini@4wmarketplace.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/69029"
+						}
+					}
+				}, {
+					"id": "72847",
+					"azienda_id": "26916",
+					"cognome": "Pattano",
+					"nome": "Massimo",
+					"ruolo_desc": "",
+					"ruolo_id": "14",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/72847"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/26916"
+				}
+			}
+		}, {
+			"id": "17",
+			"azienda": "50\u0026PIU\u0027 - ASSOCIAZIONE DI ULTRACINQUANTENNI ",
+			"area_commerciale_id": "9",
+			"indirizzo": "Via Del Melangolo, 26",
+			"cap": "00186",
+			"citta": "Roma",
+			"provincia": "RM",
+			"nazione_id": "1",
+			"telefono": "06688831",
+			"fax": "066872597",
+			"email": "50epiu@50epiu.it ",
+			"www": "http:\/\/www.50epiu.it",
+			"last_update": "2017-08-29",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "ITALIA",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "75065",
+					"azienda_id": "17",
+					"cognome": "Anzini",
+					"nome": "Nicoletta",
+					"ruolo_desc": "",
+					"ruolo_id": "5",
+					"telefono": "",
+					"fax": "",
+					"email": "n.anzini@50epiu.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/75065"
+						}
+					}
+				}, {
+					"id": "42799",
+					"azienda_id": "17",
+					"cognome": "Berti",
+					"nome": "Luisella",
+					"ruolo_desc": "",
+					"ruolo_id": "22",
+					"telefono": "0668139193",
+					"fax": "",
+					"email": "l.berti@50epiu.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/42799"
+						}
+					}
+				}, {
+					"id": "78418",
+					"azienda_id": "17",
+					"cognome": "Espis",
+					"nome": "Alessandra",
+					"ruolo_desc": "Digitale",
+					"ruolo_id": "5",
+					"telefono": "",
+					"fax": "",
+					"email": "a.espis@50epiu.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/78418"
+						}
+					}
+				}, {
+					"id": "75066",
+					"azienda_id": "17",
+					"cognome": "Scialotti",
+					"nome": "Alessandro",
+					"ruolo_desc": "Social Media MKTG",
+					"ruolo_id": "7",
+					"telefono": "",
+					"fax": "",
+					"email": "a.scialotti@50epiu.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/75066"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/17"
+				}
+			}
+		}, {
+			"id": "33798",
+			"azienda": "54 WORDS DI SERENA CAPASSO",
+			"area_commerciale_id": "3",
+			"indirizzo": "Via Koristka, 2",
+			"cap": "20154",
+			"citta": "Milano",
+			"provincia": "",
+			"nazione_id": "1",
+			"telefono": "0236513132",
+			"fax": "",
+			"email": "info@54words.net",
+			"www": "",
+			"last_update": "0000-00-00",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": []
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/33798"
+				}
+			}
+		}, {
+			"id": "26903",
+			"azienda": "9.2  BY CARLO CHIONNA",
+			"area_commerciale_id": "6",
+			"indirizzo": "Via Lemonia 54",
+			"cap": "40133",
+			"citta": "Bologna",
+			"provincia": "BO",
+			"nazione_id": "1",
+			"telefono": "05119986503",
+			"fax": "",
+			"email": "info9.2@nuovomondoitaly.it",
+			"www": "www.9punto2.com",
+			"last_update": "2017-09-14",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "79504",
+					"azienda_id": "26903",
+					"cognome": "Demaria",
+					"nome": "Giada",
+					"ruolo_desc": "e MKTG",
+					"ruolo_id": "13",
+					"telefono": "",
+					"fax": "",
+					"email": "info@9punto2.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/79504"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/26903"
+				}
+			}
+		}, {
+			"id": "30639",
+			"azienda": "9ARTCORSOCOMO9",
+			"area_commerciale_id": "3",
+			"indirizzo": "Corso Como, 9",
+			"cap": "20154",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "0236503951",
+			"fax": "0236503951",
+			"email": "ufficiostampa@9artcorsocomo9.com",
+			"www": "www.9art.it  www.9artcorsocomo9.com",
+			"last_update": "2015-04-01",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "69251",
+					"azienda_id": "30639",
+					"cognome": "Caligiuri",
+					"nome": "Margherita",
+					"ruolo_desc": "Presidente",
+					"ruolo_id": "28",
+					"telefono": "",
+					"fax": "",
+					"email": "redazione@9art.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/69251"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/30639"
+				}
+			}
+		}, {
+			"id": "801",
+			"azienda": "A PIU\u0027 SRL SOCIO UNICO",
+			"area_commerciale_id": "3",
+			"indirizzo": "Via Martiri delle Foibe, 5",
+			"cap": "20853",
+			"citta": "Biassono",
+			"provincia": "mb",
+			"nazione_id": "1",
+			"telefono": "039 746502",
+			"fax": "039 8946077",
+			"email": " info@a-piu-srl.com",
+			"www": "www.a-piu-srl.com",
+			"last_update": "2013-07-23",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "13688",
+					"azienda_id": "801",
+					"cognome": "Unger",
+					"nome": "Arianna",
+					"ruolo_desc": "",
+					"ruolo_id": "21",
+					"telefono": "",
+					"fax": "",
+					"email": "info@a-piu-srl.com, arianna@a-piu-srl.com",
+					"ordine": "100",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/13688"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/801"
+				}
+			}
+		}, {
+			"id": "30062",
+			"azienda": "A-TONO SRL",
+			"area_commerciale_id": "2",
+			"indirizzo": "Corso Buenos Aires, 77",
+			"cap": "20124",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "0232069100",
+			"fax": "0232069101",
+			"email": "info@a-tono.com",
+			"www": "http:\/\/a-tono.com\/it\/",
+			"last_update": "2017-10-26",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "72465",
+					"azienda_id": "30062",
+					"cognome": "Caspani",
+					"nome": "Giuseppe",
+					"ruolo_desc": "e MKTG Digital",
+					"ruolo_id": "13",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/72465"
+						}
+					}
+				}, {
+					"id": "64352",
+					"azienda_id": "30062",
+					"cognome": "Granato",
+					"nome": "Maurizio",
+					"ruolo_desc": "e Digital Marketing",
+					"ruolo_id": "13",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/64352"
+						}
+					}
+				}, {
+					"id": "60028",
+					"azienda_id": "30062",
+					"cognome": "Micali",
+					"nome": "Emilia",
+					"ruolo_desc": "",
+					"ruolo_id": "22",
+					"telefono": "",
+					"fax": "",
+					"email": "emilia.micali@a-tono.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/60028"
+						}
+					}
+				}, {
+					"id": "64351",
+					"azienda_id": "30062",
+					"cognome": "Nicastro",
+					"nome": "Stefania",
+					"ruolo_desc": "",
+					"ruolo_id": "22",
+					"telefono": "",
+					"fax": "",
+					"email": "stefania.nicastro@a-tono.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/64351"
+						}
+					}
+				}, {
+					"id": "75668",
+					"azienda_id": "30062",
+					"cognome": "Pignagnoli",
+					"nome": "Marco",
+					"ruolo_desc": "",
+					"ruolo_id": "9",
+					"telefono": "",
+					"fax": "",
+					"email": "marco.pignagnoli@a-tono.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/75668"
+						}
+					}
+				}, {
+					"id": "79367",
+					"azienda_id": "30062",
+					"cognome": "Snyder",
+					"nome": "Lorrie",
+					"ruolo_desc": "",
+					"ruolo_id": "22",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/79367"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/30062"
+				}
+			}
+		}, {
+			"id": "5805",
+			"azienda": "A. MANZONI \u0026 C. SPA",
+			"area_commerciale_id": "3",
+			"indirizzo": "Via Nervesa, 21",
+			"cap": "20139",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "02574941",
+			"fax": "0257400444",
+			"email": "info@manzoni.it",
+			"www": "www.manzoniadvertising.com",
+			"last_update": "2016-10-04",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "ITALIA",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "60067",
+					"azienda_id": "5805",
+					"cognome": "Ghedini",
+					"nome": "Massimo",
+					"ruolo_desc": "Amm. Delegato",
+					"ruolo_id": "28",
+					"telefono": "",
+					"fax": "",
+					"email": "",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/60067"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/5805"
+				}
+			}
+		}, {
+			"id": "4056",
+			"azienda": "A. MENARINI INDUSTRIE FARMACEUTICHE RIUNITE SRL",
+			"area_commerciale_id": "14",
+			"indirizzo": "VIA SETTE SANTI 3",
+			"cap": "50131",
+			"citta": "FIRENZE",
+			"provincia": "FI",
+			"nazione_id": "1",
+			"telefono": "05556801",
+			"fax": "0555680453",
+			"email": "",
+			"www": "www.menarini.com",
+			"last_update": "2017-11-27",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "78604",
+					"azienda_id": "4056",
+					"cognome": "Acanfora",
+					"nome": "Francesco",
+					"ruolo_desc": "Head of Digital Innovation \u0026 Services",
+					"ruolo_id": "5",
+					"telefono": "",
+					"fax": "",
+					"email": "facanfora@menarini.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/78604"
+						}
+					}
+				}, {
+					"id": "52748",
+					"azienda_id": "4056",
+					"cognome": "Speroni Cardi",
+					"nome": "Valeria",
+					"ruolo_desc": "e PR",
+					"ruolo_id": "22",
+					"telefono": "",
+					"fax": "",
+					"email": "ufficiostampa@menarini.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/52748"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/4056"
+				}
+			}
+		}, {
+			"id": "34",
+			"azienda": "A.C.E. AGENCE COMMUNICATION EUROPEENNE",
+			"area_commerciale_id": "2",
+			"indirizzo": "Via dei Borromeo, 16",
+			"cap": "37137",
+			"citta": "Padova",
+			"provincia": "PD",
+			"nazione_id": "1",
+			"telefono": "0498765336",
+			"fax": "0270034481",
+			"email": "eic@eic.it",
+			"www": "www.eic.it",
+			"last_update": "2017-09-15",
+			"indirizzo_s": "Via del Borromeo, 16",
+			"cap_s": "37137",
+			"citta_s": "Padova",
+			"provincia_s": "PD",
+			"nazione_s": "ITALIA",
+			"email_s": "mail@euroinfocentre.com",
+			"telefono_s": "049 8764499",
+			"fax_s": "049 8782104",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "11702",
+					"azienda_id": "34",
+					"cognome": "Paoli",
+					"nome": "Mattia",
+					"ruolo_desc": "Resp. Italia",
+					"ruolo_id": "28",
+					"telefono": "0498782104",
+					"fax": "1780432101",
+					"email": "eic@eic.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/11702"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/34"
+				}
+			}
+		}, {
+			"id": "15993",
+			"azienda": "A.C.T. - AZIENDA CONSORZIALE TRASPORTI E AG. LOC. PER LA MOB. DI REGGIO EMILIA",
+			"area_commerciale_id": "53",
+			"indirizzo": "V.le Trento Trieste, 11",
+			"cap": "42124",
+			"citta": "Reggio Emilia",
+			"provincia": "RE",
+			"nazione_id": "1",
+			"telefono": "0522927854",
+			"fax": "0522927674",
+			"email": "actre@actre.it",
+			"www": "www.actre.it",
+			"last_update": "2017-06-05",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": [{
+					"id": "30188",
+					"azienda_id": "15993",
+					"cognome": "Grugnetti",
+					"nome": "Sarah",
+					"ruolo_desc": "",
+					"ruolo_id": "13",
+					"telefono": "0522927854",
+					"fax": "0522927674",
+					"email": "s.grugnetti@actre.it",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/30188"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/15993"
+				}
+			}
+		}, {
+			"id": "890",
+			"azienda": "A.I.O.P. - ASS. ITALIANA OSPEDALITA\u0027 PRIVATA",
+			"area_commerciale_id": "9",
+			"indirizzo": "Via Lucrezio Caro, 67",
+			"cap": "00193",
+			"citta": "Roma",
+			"provincia": "RM",
+			"nazione_id": "1",
+			"telefono": "063215653",
+			"fax": "065215703",
+			"email": "aiop@aiop.it",
+			"www": "",
+			"last_update": "2015-09-08",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "66363",
+					"azienda_id": "890",
+					"cognome": "Rinaldi",
+					"nome": "Fabiana",
+					"ruolo_desc": "",
+					"ruolo_id": "22",
+					"telefono": "",
+					"fax": "",
+					"email": "f.rinaldi@aiop.it",
+					"ordine": "100",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/66363"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/890"
+				}
+			}
+		}, {
+			"id": "15769",
+			"azienda": "A.I.R.I.",
+			"area_commerciale_id": "9",
+			"indirizzo": "Viale Gorizia, 25\/C",
+			"cap": "00198",
+			"citta": "Roma",
+			"provincia": "RM",
+			"nazione_id": "1",
+			"telefono": "068848831\/8546662",
+			"fax": "068552949",
+			"email": "info@airi.it",
+			"www": "www.airi.it",
+			"last_update": "2017-08-16",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": []
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/15769"
+				}
+			}
+		}, {
+			"id": "638",
+			"azienda": "A.N.P.AS.",
+			"area_commerciale_id": "9",
+			"indirizzo": "Via Pio Fedi,  46 \/48",
+			"cap": "50142",
+			"citta": "FIRENZE",
+			"provincia": "FI",
+			"nazione_id": "1",
+			"telefono": "055303821",
+			"fax": "055375002",
+			"email": "segreteria@anpas.org",
+			"www": "http:\/\/www.anpas.org",
+			"last_update": "2017-08-17",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "ITALIA",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "58821",
+					"azienda_id": "638",
+					"cognome": "Cardoni",
+					"nome": "Andrea",
+					"ruolo_desc": "",
+					"ruolo_id": "22",
+					"telefono": "",
+					"fax": "",
+					"email": "comunicazione@anpas.org",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/58821"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/638"
+				}
+			}
+		}, {
+			"id": "25036",
+			"azienda": "A.R.P. - ALLESTIMENTI REALIZZAZIONI PUBBLICITARIE SRL",
+			"area_commerciale_id": "3",
+			"indirizzo": "Via G. A. Sartorio, 66",
+			"cap": "00147",
+			"citta": "ROMA",
+			"provincia": "RM",
+			"nazione_id": "1",
+			"telefono": "065135828\/065132072",
+			"fax": "065134003",
+			"email": "arp@arp.it",
+			"www": "www.arp.it",
+			"last_update": "2017-09-14",
+			"indirizzo_s": null,
+			"cap_s": null,
+			"citta_s": null,
+			"provincia_s": null,
+			"nazione_s": null,
+			"email_s": null,
+			"telefono_s": null,
+			"fax_s": null,
+			"_embedded": {
+				"comunicatori": []
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/25036"
+				}
+			}
+		}, {
+			"id": "1097",
+			"azienda": "A.S.T.E.R. S.C.AR.L. AGENZIA PER LO SVILUPPO TECNOLOGICO DELL\u0027EMILIA ROMAGNA",
+			"area_commerciale_id": "2",
+			"indirizzo": "Via Morgagni Gian Battista, 4",
+			"cap": "40122",
+			"citta": "Bologna",
+			"provincia": "BO",
+			"nazione_id": "1",
+			"telefono": "0516398099",
+			"fax": "",
+			"email": "info@aster.it",
+			"www": "http:\/\/www.aster.it",
+			"last_update": "0000-00-00",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": []
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/1097"
+				}
+			}
+		}, {
+			"id": "1104",
+			"azienda": "A.T. KEARNEY ITALIA INC.",
+			"area_commerciale_id": "2",
+			"indirizzo": "Via Borghetto, 6",
+			"cap": "20122",
+			"citta": "Milano",
+			"provincia": "MI",
+			"nazione_id": "1",
+			"telefono": "02762951",
+			"fax": "0276295200",
+			"email": "",
+			"www": "http:\/\/www.atkearney.it",
+			"last_update": "2017-09-15",
+			"indirizzo_s": "",
+			"cap_s": "",
+			"citta_s": "",
+			"provincia_s": "",
+			"nazione_s": "ITALIA",
+			"email_s": "",
+			"telefono_s": "",
+			"fax_s": "",
+			"_embedded": {
+				"comunicatori": [{
+					"id": "9023",
+					"azienda_id": "1104",
+					"cognome": "Scannavini",
+					"nome": "Nicoletta",
+					"ruolo_desc": "",
+					"ruolo_id": "13",
+					"telefono": "",
+					"fax": "0276295362",
+					"email": "nicoletta.scannavini@atkearney.com",
+					"ordine": "0",
+					"_links": {
+						"self": {
+							"href": "https:\/\/www.mediadata.it\/api\/comunicatore\/9023"
+						}
+					}
+				}]
+			},
+			"_links": {
+				"self": {
+					"href": "https:\/\/www.mediadata.it\/api\/azienda\/1104"
+				}
+			}
+		}]
+	},
+	"page_count": 221,
+	"page_size": 25,
+	"total_items": 5517,
+	"page": 1
+}
